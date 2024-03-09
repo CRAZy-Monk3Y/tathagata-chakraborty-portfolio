@@ -1,7 +1,5 @@
 import React from "react";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { CiTwitter } from "react-icons/ci";
-import { SlSocialGithub } from "react-icons/sl";
+import { socials } from "../utils/data";
 
 const Footer = () => {
   return (
@@ -17,17 +15,12 @@ const Footer = () => {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact Me</a>
         </div>
-        {/* :TODO add socials links */}
-        <div className="flex gap-4 justify-end">
-          <a href="">
-            <SlSocialLinkedin className="text-xl" />
-          </a>
-          <a href="">
-            <CiTwitter className="text-xl" />
-          </a>
-          <a href="">
-            <SlSocialGithub className="text-xl" />
-          </a>
+        <div className="flex gap-4 justify-end items-center">
+          {socials.map((item) => (
+            <a key={item.name} href={item.href} target="_blank">
+              {item.icon}
+            </a>
+          ))}
         </div>
       </div>
       <p className="text-sm text-slate-300 text-center">

@@ -7,6 +7,7 @@ import { BsMouse } from "react-icons/bs";
 import { FaArrowDown } from "react-icons/fa6";
 import Typed from "react-typed";
 import Button from "../components/Button";
+import { socials } from "../utils/data";
 
 const Home = () => {
   return (
@@ -16,17 +17,13 @@ const Home = () => {
     >
       <div className="container grid pt-[20vh]">
         <div className="home_content grid grid-cols-4">
-          <IconContext.Provider value={{ color: "#5A43CB" }}>
-            <div className="flex flex-col justify-center items-start gap-4">
-              <a href="">
-                <SlSocialLinkedin fontSize="1.5rem" />
-              </a>
-              <a href="">
-                <CiTwitter fontSize="1.5rem" />
-              </a>
-              <a href="">
-                <SlSocialGithub fontSize="1.5rem" />
-              </a>
+          <IconContext.Provider value={{ color: "#5A43CB", size: "1.5rem" }}>
+            <div className="flex flex-col justify-center items-start gap-6">
+              {socials.map((item) => (
+                <a key={item.name} href={item.href} target="_blank">
+                  {item.icon}
+                </a>
+              ))}
             </div>
           </IconContext.Provider>
 

@@ -2,6 +2,7 @@ import React from "react";
 import about_me_img from "../assets/img/about-img.png";
 import { BiNews } from "react-icons/bi";
 import Button from "../components/Button";
+// import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -12,12 +13,14 @@ const About = () => {
       <h2 className="text-4xl text-center">About Me</h2>
       <span className="pb-6 text-center">My introduction</span>
       <div className="flex flex-row items-center justify-between gap-4 max-w-2xl">
-        <img
-          src={about_me_img}
-          alt="headshot image"
-          className="rounded-lg h-[20rem] object-cover"
-          data-tilt
-        />
+        {/* <motion.div className="w-full"> */}
+          <img
+            src={about_me_img}
+            alt="headshot image"
+            className="rounded-lg h-[20rem] object-cover"
+            data-tilt
+          />
+        {/* </motion.div> */}
         <div className="flex flex-col gap-4">
           <p className="about_description">
             Hey there, 🖐️ I am Tathagata Chakraborty a full stack web developer
