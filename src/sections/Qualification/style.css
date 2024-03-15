@@ -1,0 +1,56 @@
+.qualification_tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification_button {
+  cursor: pointer;
+}
+
+.qualification_icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification_data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification_subtitle {
+  display: inline-block;
+}
+
+.qualification_subtitle a {
+  color: inherit;
+}
+
+.qualification_calendar {
+  color: #b3b1bc;
+}
+
+.qualification_circle {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #6e57e0;
+  border-radius: 50%;
+}
+
+.qualification_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #6e57e0;
+  transform: translate(6px, -7px);
+}
+
+.qualification-content {
+  display: block;
+}
+
+.qualification-inactive {
+  display: none;
+}

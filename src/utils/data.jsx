@@ -112,4 +112,21 @@ const socials = [
   },
 ];
 
-export { skills, socials };
+const jobExperience = [
+  {
+    index: 1,
+    companyName: "Wipro Technologies",
+    companySite: "https://www.wipro.com/",
+    jobTitle: "Software Engineer",
+    tenure: "May 2022 - Present",
+  },
+  {
+    index: 2,
+    companyName: "Wipro Technologies",
+    companySite: "https://www.wipro.com/",
+    jobTitle: "Software Engineer Intern",
+    tenure: "February 2022 - April 2022",
+  },
+];
+
+export { skills, socials, jobExperience };
