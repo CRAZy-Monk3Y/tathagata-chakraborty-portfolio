@@ -5,7 +5,11 @@ import { skills } from "../utils/data";
 
 const Skills = () => {
   return (
-    <section className="max-w-2xl h-full m-auto flex items-center" id="skills">
+    <section
+      className="max-w-2xl h-full mx-auto mb-20
+     flex items-center"
+      id="skills"
+    >
       <div className="">
         <h1 className="text-center text-4xl font-semibold">Skills</h1>
         <p className="text-center text-[#B8B6C1]">My Technical Skills</p>
