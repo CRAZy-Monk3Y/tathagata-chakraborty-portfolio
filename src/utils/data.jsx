@@ -17,6 +17,10 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { BsTwitterX } from "react-icons/bs";
 import { SlSocialGithub } from "react-icons/sl";
 
+import { MdOutlineMail } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import { GitFindr } from "../assets/img";
+
 const skills = [
   {
     skillCategory: "Languages",
@@ -129,4 +133,77 @@ const jobExperience = [
   },
 ];
 
-export { skills, socials, jobExperience };
+const contactLinks = [
+  {
+    title: "Email",
+    address: "mailto:tathagata.chakraborty@yahoo.com",
+    icon: (
+      <div>
+        <MdOutlineMail className="w-8 h-8 text-[#6E57E0]" />
+      </div>
+    ),
+  },
+  {
+    title: "Location",
+    address: "Kolkata, India",
+    icon: (
+      <div>
+        <IoLocationOutline className="w-8 h-8 text-[#6E57E0]" />
+      </div>
+    ),
+  },
+];
+
+// TODO: Complete this image integration
+const projects = [
+  {
+    id: 1,
+    title: "GitFindr",
+    description:
+      "GitFinder is a React.js application built with Yarn and Vite. It allows users to search for GitHub users by their username and provides details about their Git profiles. The app also includes a search history feature that enables users to view their previous searches and delete them. ",
+    image: GitFindr, // Replace with your image path
+    repoLink: "https://github.com/CRAZy-Monk3Y/gitFinder",
+  },
+  {
+    id: 2,
+    title: "Responsive Bank App",
+    description:
+      "This is a beautifully designed responsive web application for a bank, built using React.js, Vite, and Tailwind CSS. The app is optimized for usability on various devices, including desktops, tablets, and mobile phones.",
+    image: "https://random.imagecdn.app/500/150", // Replace with your image path
+    repoLink: "https://github.com/your-username/e-commerce",
+  },
+  {
+    id: 3,
+    title: "Portfolio Website",
+    description:
+      "A showcase of your skills and experience built with React and Tailwind CSS. Responsive and visually appealing, highlighting your projects and qualifications.",
+    image: "https://random.imagecdn.app/500/150", // Replace with your image path
+    repoLink: "https://github.com/your-username/portfolio",
+  },
+  {
+    id: 4,
+    title: "Weather App",
+    description:
+      "A weather application displaying real-time weather data for various locations. Utilizes APIs and provides a user-friendly interface.",
+    image: "https://random.imagecdn.app/500/150", // Replace with your image path
+    repoLink: "https://github.com/your-username/weather-app",
+  },
+  {
+    id: 5,
+    title: "Quiz Game",
+    description:
+      "An interactive quiz game testing knowledge on a specific subject. Includes features like scorekeeping and multiple-choice questions.",
+    image: "https://random.imagecdn.app/500/150", // Replace with your image path
+    repoLink: "https://github.com/your-username/quiz-game",
+  },
+  {
+    id: 6,
+    title: "Blog Website",
+    description:
+      "A content management system (CMS) built with a framework like Django or WordPress. Allows users to create, edit, and publish blog posts.",
+    image: "https://random.imagecdn.app/500/150", // Replace with your image path
+    repoLink: "https://github.com/your-username/blog",
+  },
+];
+
+export { skills, socials, jobExperience, contactLinks, projects };

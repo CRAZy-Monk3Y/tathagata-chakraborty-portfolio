@@ -1,56 +1,7 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
+import { projects } from "../utils/data";
 
-const projects = [
-  {
-    id: 1,
-    title: "To-Do List App",
-    description:
-      "A simple and user-friendly to-do list application built with React for managing tasks and increasing productivity.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/todo-list",
-  },
-  {
-    id: 2,
-    title: "E-Commerce Website",
-    description:
-      "A fully functional e-commerce website built with a modern framework (e.g., React or Vue.js) for buying and selling products online. Integrates payment gateways and user authentication.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/e-commerce",
-  },
-  {
-    id: 3,
-    title: "Portfolio Website",
-    description:
-      "A showcase of your skills and experience built with React and Tailwind CSS. Responsive and visually appealing, highlighting your projects and qualifications.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/portfolio",
-  },
-  {
-    id: 4,
-    title: "Weather App",
-    description:
-      "A weather application displaying real-time weather data for various locations. Utilizes APIs and provides a user-friendly interface.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/weather-app",
-  },
-  {
-    id: 5,
-    title: "Quiz Game",
-    description:
-      "An interactive quiz game testing knowledge on a specific subject. Includes features like scorekeeping and multiple-choice questions.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/quiz-game",
-  },
-  {
-    id: 6,
-    title: "Blog Website",
-    description:
-      "A content management system (CMS) built with a framework like Django or WordPress. Allows users to create, edit, and publish blog posts.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/blog",
-  },
-];
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalProjects = projects.length;
@@ -147,7 +98,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="flex flex-row w-10/12 min-h-56 mx-auto bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden ">
       <img
-        className="max-w-56 object-cover"
+        className="max-w-72 object-cover"
         src={project.image}
         alt={project.title}
       />
