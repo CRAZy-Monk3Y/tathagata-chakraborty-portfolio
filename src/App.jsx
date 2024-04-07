@@ -10,7 +10,7 @@ import Qualification from "./sections/Qualification/Qualification";
 function App() {
   return (
     <div className="bg-[#FBFBFE] dark:bg-[#191627] dark:text-white font-poppins">
-      <div className="max-w-4xl w-full mx-auto min-h-[95vh] font-poppins">
+      <div className="max-w-4xl w-full mx-auto min-h-[95vh] font-poppins ">
         <Header />
         {/* Home Section */}
         <Home />

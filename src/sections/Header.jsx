@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="w-screen left-0 top-0 z-[100] fixed dark:text-white dark:bg-[#191627] bg-[#FBFBFE]">
+    <nav className="w-screen left-0 top-0 z-[100] fixed dark:text-white bg-[#FBFBFE] dark:bg-[#191627] backdrop-filter backdrop-blur-sm bg-opacity-30 dark:bg-opacity-30">
       <div className="w-full h-[4rem] mx-auto max-w-4xl flex justify-between items-center">
         <a href="#" className="hover:text-[#6E57E0]">
           Tathagata
