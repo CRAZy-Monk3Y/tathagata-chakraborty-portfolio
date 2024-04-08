@@ -19,7 +19,7 @@ import { SlSocialGithub } from "react-icons/sl";
 
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { GitFindr } from "../assets/img";
+import { GitFindr, ResponsiveBankApp } from "../assets/img";
 
 const skills = [
   {
@@ -154,7 +154,6 @@ const contactLinks = [
   },
 ];
 
-// TODO: Complete this image integration
 const projects = [
   {
     id: 1,
@@ -169,40 +168,41 @@ const projects = [
     title: "Responsive Bank App",
     description:
       "This is a beautifully designed responsive web application for a bank, built using React.js, Vite, and Tailwind CSS. The app is optimized for usability on various devices, including desktops, tablets, and mobile phones.",
-    image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/e-commerce",
+    image: ResponsiveBankApp, // Replace with your image path
+    repoLink: "https://github.com/CRAZy-Monk3Y/bank_modern_app",
   },
   {
     id: 3,
-    title: "Portfolio Website",
+    title: "Full Stack Movie Review App",
     description:
-      "A showcase of your skills and experience built with React and Tailwind CSS. Responsive and visually appealing, highlighting your projects and qualifications.",
+      "Introducing a dynamic Full Stack Movie Review App, seamlessly merging Spring Boot and MongoDB for a robust backend. Crafted with React JS, Vite, and react-router on the frontend, enhanced by axios, react-icons, and bootstrap, offering a user-friendly interface. Experience smooth RESTful API interactions, empowered by React Player for multimedia integration. Unlock a captivating movie review platform that seamlessly blends technology and cinema passion.",
     image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/portfolio",
+    repoLink: "https://github.com/CRAZy-Monk3Y/FullStackMoviesApp",
   },
   {
     id: 4,
-    title: "Weather App",
+    title: "WeatherWiz",
     description:
-      "A weather application displaying real-time weather data for various locations. Utilizes APIs and provides a user-friendly interface.",
+      "WeatherWiz is a cutting-edge full-stack weather app that empowers users with real-time weather insights. Crafted with Next.js 13, Tailwind CSS, and TypeScript, it exemplifies our commitment to modern web tech. Seamlessly access weather data worldwide, dive into 7-day forecasts. Tailored for both desktop and mobile, WeatherWiz harnesses the latest web innovations to deliver an immersive and responsive user experience. A Project of web development excellence, leveraging the skills and technologies that make WeatherWiz a true standout in the industry.",
     image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/weather-app",
+    repoLink: "https://github.com/CRAZy-Monk3Y/Weather-App.git",
   },
   {
     id: 5,
-    title: "Quiz Game",
+    title: "NikeReactive",
     description:
-      "An interactive quiz game testing knowledge on a specific subject. Includes features like scorekeeping and multiple-choice questions.",
+      "This is a responsive web application that replicates the design and functionality of the Nike website. It is built using Yarn, React.js, Vite, Tailwind CSS, and React Reveal for animations. The app is designed to provide an optimal user experience across various devices and screen resolutions.",
     image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/quiz-game",
+    repoLink: "https://github.com/CRAZy-Monk3Y/NikeReactiveApp.git",
   },
   {
     id: 6,
-    title: "Blog Website",
+    title: "PortFolio Website",
     description:
-      "A content management system (CMS) built with a framework like Django or WordPress. Allows users to create, edit, and publish blog posts.",
+      "Welcome to my portfolio website! The website you are visitin now. This platform showcases my latest projects, skills, and experiences.",
     image: "https://random.imagecdn.app/500/150", // Replace with your image path
-    repoLink: "https://github.com/your-username/blog",
+    repoLink:
+      "https://github.com/CRAZy-Monk3Y/tathagata-chakraborty-portfolio.git",
   },
 ];
 
