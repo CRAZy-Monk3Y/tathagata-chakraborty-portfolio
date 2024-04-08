@@ -1,5 +1,5 @@
 import React from "react";
-import about_me_img from "../assets/img/about-img.png";
+import about_me_img from "../assets/img/about-img-animate.png";
 import { BiNews } from "react-icons/bi";
 import Button from "../components/Button";
 // import { motion } from "framer-motion";
@@ -11,15 +11,15 @@ const About = () => {
       id="about"
     >
       <h2 className="text-4xl text-center">About Me</h2>
-      <span className="pb-6 text-center">My introduction</span>
+      <span className="pb-6 text-center text-[#B8B6C1]">My introduction</span>
       <div className="flex flex-row items-center justify-between gap-4 max-w-2xl">
         {/* <motion.div className="w-full"> */}
-          <img
-            src={about_me_img}
-            alt="headshot image"
-            className="rounded-lg h-[20rem] object-cover"
-            data-tilt
-          />
+        <img
+          src={about_me_img}
+          alt="headshot image"
+          className="rounded-lg h-[20rem] object-cover"
+          data-tilt
+        />
         {/* </motion.div> */}
         <div className="flex flex-col gap-4">
           <p className="about_description">

@@ -9,3 +9,7 @@
   margin: 0;
   padding: 0;
 }
+
+.dark {
+  background-color: #191627;
+}

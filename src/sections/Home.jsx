@@ -86,7 +86,7 @@ const Home = () => {
               className="mt-4"
             />
           </div>
-          {/* :TODO Add any relevant png icon */}
+          
         </div>
       </div>
       <a

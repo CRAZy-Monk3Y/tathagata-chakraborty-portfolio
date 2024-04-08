@@ -53,7 +53,7 @@ const Qualification = () => {
                   <div></div>
 
                   <div>
-                    <span class="qualification_circle "></span>
+                    <span className="qualification_circle "></span>
                   </div>
                   <div>
                     <h3 className="qualification_title font-semibold">
