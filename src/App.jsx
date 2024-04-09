@@ -6,6 +6,8 @@ import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import ContactMe from "./sections/ContactMe";
 import Qualification from "./sections/Qualification/Qualification";
+import { BiSolidUpArrow } from "react-icons/bi";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
@@ -26,6 +28,14 @@ function App() {
         <ContactMe />
       </div>
       <Footer />
+      <ScrollToTop
+        smooth
+        className="p-1 flex items-center justify-center"
+        style={{ backgroundColor: "#5A43CB" }}
+        component={<BiSolidUpArrow />}
+        height="20"
+        width="20"
+      />
     </div>
   );
 }
