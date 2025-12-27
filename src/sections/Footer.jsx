@@ -1,4 +1,3 @@
-import React from "react";
 import { socials } from "../utils/data";
 
 const Footer = () => {

@@ -1,8 +1,7 @@
-import React from "react";
 import { IconContext } from "react-icons";
+import { FaCalendarAlt } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { jobExperience } from "../../utils/data";
-import { FaCalendarAlt } from "react-icons/fa";
 import "./style.css";
 
 const Qualification = () => {

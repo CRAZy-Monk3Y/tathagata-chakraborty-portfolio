@@ -1,10 +1,7 @@
-import React from "react";
 import { IconContext } from "react-icons";
-import { CiTwitter } from "react-icons/ci";
-import { SlSocialGithub, SlSocialLinkedin } from "react-icons/sl";
-import { LuSendHorizonal } from "react-icons/lu";
 import { BsMouse } from "react-icons/bs";
 import { FaArrowDown } from "react-icons/fa6";
+import { IoSend } from "react-icons/io5";
 import Typed from "react-typed";
 import Button from "../components/Button";
 import { socials } from "../utils/data";
@@ -16,9 +13,9 @@ const Home = () => {
       id="home"
     >
       <div className="container grid pt-[20vh]">
-        <div className="home_content grid grid-cols-4">
+        <div className="home_content grid grid-cols-4 gap-1 md:gap-4">
           <IconContext.Provider value={{ color: "#5A43CB", size: "1.5rem" }}>
-            <div className="flex flex-col justify-center items-start gap-6">
+            <div className="flex flex-col col-span-2 md:col-span-1 justify-center items-center sm:items-start gap-6 pl-2 md:pl-0">
               {socials.map((item) => (
                 <a key={item.name} href={item.href} target="_blank">
                   {item.icon}
@@ -27,51 +24,21 @@ const Home = () => {
             </div>
           </IconContext.Provider>
 
-          {/* <div className="home_img">
-            <svg
-              className="home_blob"
-              viewBox="0 0 200 187"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              data-tilt
-            >
-              <mask id="mask0" mask-type="alpha">
-                <path
-                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                />
-              </mask>
-              <g mask="url(#mask0)">
-                <path
-                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                />
-                <image
-                  className="home_blob-img"
-                  x="12"
-                  y="8"
-                  href="./assets/img/icon.png"
-                />
-              </g>
-            </svg>
-          </div> */}
-
-          <div className="flex flex-col gap-4 col-span-3">
-            <h1 className="text-5xl font-semibold">Hi, I'm Tathagata</h1>
-            <h3 className="text-[#6D6A7C] dark:text-gray-300 text-xl">
-              I am{" "}
+          <div className="flex flex-col gap-4 col-span-2 md:col-span-3">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold">
+              Hi, I'm Tathagata
+            </h1>
+            <h3 className="text-[#6D6A7C] dark:text-gray-300 text-base md:text-lg lg:text-xl">
               <Typed
                 strings={[
-                  "a Web Developer",
-                  "full stack Engineer",
-                  "a tech enthusiast ",
+                  "I engineer full-stack systems powered by applied AI.",
+                  "From backend foundations to intelligent automation, I build end-to-end solutions.",
+                  "I turn LLMs and data workflows into products that actually ship.",
+                  "My focus is reliability, scalability, and real business impact — not demos.",
+                  "If AI needs to work in production, that’s where I come in.",
                 ]}
-                typeSpeed={100}
-                backSpeed={90}
+                typeSpeed={90}
+                backSpeed={50}
                 loop
               />{" "}
             </h3>
@@ -82,20 +49,19 @@ const Home = () => {
             <Button
               title="Contact Me"
               href="#contact"
-              icon={<LuSendHorizonal size={20} />}
-              className="mt-4"
+              icon={<IoSend size={20} />}
+              className="mt-2 md:mt-4 text-sm md:text-lg hover:shadow-xl transition duration-150 ease-in-out"
             />
           </div>
-          
         </div>
       </div>
       <a
         href="#about"
-        className="w-[10rem] flex hover:animate-bounce flex-row items-center gap-2 py-10"
+        className="w-[10rem] sm:flex hover:animate-bounce flex-row items-center gap-2 py-10 hidden "
       >
         <IconContext.Provider value={{ color: "#5A43CB" }}>
           <BsMouse size={30} />
-          <span className="home_scroll-name">Scroll Down</span>
+          <span className="text-sm md:text-base ">Scroll Down</span>
           <FaArrowDown size={20} />
         </IconContext.Provider>
       </a>

@@ -32,12 +32,11 @@ function App() {
         smooth
         className="p-1 flex items-center justify-center"
         style={{ backgroundColor: "#5A43CB" }}
-        component={<BiSolidUpArrow />}
+        component={<BiSolidUpArrow className="text-white" />}
         height="20"
         width="20"
       />
     </div>
   );
 }
-
 export default App;
