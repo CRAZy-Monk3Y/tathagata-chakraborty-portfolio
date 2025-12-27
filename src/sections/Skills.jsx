@@ -1,6 +1,5 @@
-import React from "react";
-import SkillsDropDown from "../components/SkillsDropDown";
 import { IconContext } from "react-icons";
+import SkillsDropDown from "../components/SkillsDropDown";
 import { skills } from "../utils/data";
 
 const Skills = () => {

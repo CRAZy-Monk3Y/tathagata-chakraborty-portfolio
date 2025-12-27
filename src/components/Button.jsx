@@ -1,4 +1,3 @@
-import React from "react";
 
 const Button = ({ title, icon, href, className = "", children }) => {
   if (children) {

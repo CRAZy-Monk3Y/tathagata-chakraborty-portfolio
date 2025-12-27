@@ -1,24 +1,29 @@
-import { IoMdCode } from "react-icons/io";
+import { FaPython, FaTools } from "react-icons/fa";
 import {
-  SiExpress,
+  FaDocker,
+  FaGitAlt,
+  FaGithub,
+  FaJenkins,
+  FaNodeJs,
+  FaReact,
+} from "react-icons/fa6";
+import { IoMdCode } from "react-icons/io";
+import { PiBracketsCurlyBold } from "react-icons/pi";
+import {
+  SiFastapi,
   SiGooglecloud,
   SiJavascript,
+  SiLangchain,
   SiMongodb,
-  SiMysql,
-  SiNetlify,
-  SiSpringboot,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
-import { FaJava, FaPython, FaTools } from "react-icons/fa";
-import { PiBracketsCurlyBold } from "react-icons/pi";
-import { FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa6";
 
-import { SlSocialLinkedin } from "react-icons/sl";
 import { BsTwitterX } from "react-icons/bs";
-import { SlSocialGithub } from "react-icons/sl";
+import { SlSocialGithub, SlSocialLinkedin } from "react-icons/sl";
 
-import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 import { GitFindr, ResponsiveBankApp } from "../assets/img";
 
 const skills = [
@@ -32,8 +37,8 @@ const skills = [
         icon: <SiJavascript />,
       },
       {
-        name: "Java",
-        icon: <FaJava />,
+        name: "TypeScript",
+        icon: <SiTypescript />,
       },
       {
         name: "Python",
@@ -44,8 +49,20 @@ const skills = [
   {
     skillCategory: "Libraries & Frameworks",
     icon: <PiBracketsCurlyBold />,
-    description: "Libraries and Frameworks that I prefer to work with",
+    description: "Libraries and Frameworks that I have worked with",
     list: [
+      {
+        name: "Fast API",
+        icon: <SiFastapi />,
+      },
+      {
+        name: "Langchain",
+        icon: <SiLangchain />,
+      },
+      {
+        name: "Langgraph",
+        icon: <SiLangchain />,
+      },
       {
         name: "React",
         icon: <FaReact />,
@@ -59,17 +76,8 @@ const skills = [
         icon: <FaNodeJs />,
       },
       {
-        name: "Express.js",
-        icon: <SiExpress />,
-      },
-      {
         name: "MongoDB",
         icon: <SiMongodb />,
-      },
-      { name: "MySQL", icon: <SiMysql /> },
-      {
-        name: "Spring Boot",
-        icon: <SiSpringboot />,
       },
     ],
   },
@@ -79,6 +87,10 @@ const skills = [
     description: "Tools that I know and use on a daily basis",
     list: [
       {
+        name: "Google Cloud",
+        icon: <SiGooglecloud />,
+      },
+      {
         name: "Git",
         icon: <FaGitAlt />,
       },
@@ -87,12 +99,12 @@ const skills = [
         icon: <FaGithub />,
       },
       {
-        name: "Netlify",
-        icon: <SiNetlify />,
+        name: "Docker",
+        icon: <FaDocker />,
       },
       {
-        name: "Google Cloud",
-        icon: <SiGooglecloud />,
+        name: "Jenkins",
+        icon: <FaJenkins />,
       },
     ],
   },
@@ -101,7 +113,7 @@ const skills = [
 const socials = [
   {
     name: "Linkdin",
-    href: "https://www.linkedin.com/in/tathagata-chakraborty-478416172",
+    href: "https://www.linkedin.com/in/tathagata-chakraborty-fullstack/",
     icon: <SlSocialLinkedin className="text-xl" />,
   },
   {
@@ -121,7 +133,7 @@ const jobExperience = [
     index: 1,
     companyName: "Wipro Technologies",
     companySite: "https://www.wipro.com/",
-    jobTitle: "Software Engineer",
+    jobTitle: "Fullstack AI Engineer",
     tenure: "May 2022 - Present",
   },
   {
@@ -206,4 +218,4 @@ const projects = [
   },
 ];
 
-export { skills, socials, jobExperience, contactLinks, projects };
+export { contactLinks, jobExperience, projects, skills, socials };

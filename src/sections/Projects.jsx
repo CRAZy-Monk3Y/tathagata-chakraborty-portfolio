@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Button from "../components/Button";
+import { useState } from "react";
 import { projects } from "../utils/data";
 
 const Projects = () => {
@@ -96,12 +95,7 @@ const Projects = () => {
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-row w-10/12 min-h-56 mx-auto bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden ">
-      {/* <img
-        className="max-w-72 object-cover"
-        src={project.image}
-        alt={project.title}
-      /> */}
+    <div className="flex flex-row w-10/12 min-h-56 mx-auto bg-white dark:bg-black shadow-md rounded-lg overflow-hidden hover:shadow-xl transition duration-150 ease-in-out">
       <div className="p-4 flex flex-col justify-between items-center">
         <h3 className="text-lg font-semibold mb-2 text-black dark:text-white">
           {project.title}
