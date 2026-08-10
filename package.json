@@ -11,32 +11,32 @@
   },
   "dependencies": {
     "@formspree/react": "^2.5.5",
-    "baseline-browser-mapping": "^2.9.11",
-    "caniuse-lite": "^1.0.30001761",
+    "baseline-browser-mapping": "^2.11.13",
+    "caniuse-lite": "^1.0.30001809",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.364.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.5.0",
+    "react-icons": "^5.7.0",
     "react-scroll-to-top": "^3.1.0",
     "react-typed": "^1.2.0",
-    "tailwind-merge": "^2.6.0",
+    "tailwind-merge": "^2.6.1",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^20.19.27",
-    "@types/react": "^18.3.27",
+    "@types/node": "^20.19.43",
+    "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.7.0",
-    "autoprefixer": "^10.4.23",
+    "autoprefixer": "^10.5.4",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.26",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.26",
     "tailwindcss": "^3.4.19",
-    "vite": "^5.4.21"
+    "vite": "^6.4.3"
   }
 }
